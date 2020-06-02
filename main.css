@@ -1,0 +1,479 @@
+:root
+{
+    --menu_box_anime_timer: 0.5s;
+    --base_anime_delay: 1.3s;
+    --top_box_color: #8beeff79;
+    --box_bar_color: #2196F3;
+}
+
+
+body
+{
+    background-color:   #222222;
+    color:  #000000;
+    margin:center;
+}
+
+
+.main_box
+{
+    background-color:   #000000;
+    color:var(--box_bar_color); 
+    width: 900px;
+    height: 800px;
+
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    position: absolute;
+    margin: auto;
+}
+
+.eyecatch_box
+{
+    background-color:   #000000;
+    width: 60%;
+    height: 98%;
+    
+    position: absolute;
+    top: 1%;
+    left: 38%;
+
+    opacity: 1;
+    animation-name: base_anime;
+    animation-duration: var(--base_anime_delay); 
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    animation-delay: 0s;
+}
+.eyecatch_box img
+{
+    max-width: 100%;
+    width: auto;
+    max-height: 100%;
+    height: auto;
+}
+
+.eyecatch_cover_box
+{
+    background-color:   #000000;
+    width: 100%;
+    height: 100%;
+
+    position: absolute;
+    z-index: 1;
+
+    opacity:1;
+    animation-name:eyecatch_cover_box_anime;
+    animation-duration:1s; 
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    animation-delay: 2.1s;
+}
+  
+.icon_box
+{
+    width: 34%;
+    height: 20%;
+
+    position: absolute;
+    top: 2%;
+    left: 2%;
+
+    opacity:0;
+    animation-name:icon_box_anime;
+    animation-duration:1s; 
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    animation-delay: 0s;
+}
+.icon_box img
+{
+    max-width: 100%;
+    width: auto;
+    max-height: 100%;
+    height: auto;
+}
+  
+
+  
+.menu_box
+{
+    background-color:   #000000;
+    width: 34%;
+    height: 40%;
+
+    position: absolute;
+    top: 23%;
+    left: 2%;
+
+    opacity: 1;
+    animation-name: base_anime;
+    animation-duration: var(--base_anime_delay); 
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    animation-delay: 0s;
+}
+
+
+.link_box
+{
+    background-color:   #000000;
+    width: 34%;
+    height: 35%;
+
+    position: absolute;
+    top: 64%;
+    left: 2%;
+
+    opacity: 1;
+    animation-name: base_anime;
+    animation-duration: var(--base_anime_delay); 
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    animation-delay: 0s;
+}
+
+
+.menu_top_box
+{
+    width: 90%;
+    height: 15%;
+
+    background-color: var(--top_box_color); 
+
+    position: absolute;
+    top: 4%;
+    left: 5%;
+
+    opacity:0;
+    animation-name: base_anime;
+    animation-duration: var(--menu_box_anime_timer); 
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    animation-delay: 0s;
+}
+.menu_top_box img
+{
+    max-width: 100%;
+    width: auto;
+    max-height: 100%;
+    height: auto;
+}
+
+
+.introduction_box
+{
+    width: 90%;
+    height: 15%;
+
+    position: absolute;
+    top: 23%;
+    left: 5%;
+
+    opacity:0;
+    animation-name:menu_box_anime;
+    animation-duration: var(--menu_box_anime_timer); 
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    animation-delay: 1.4s;
+}
+.introduction_box img
+{
+    max-width: 100%;
+    width: auto;
+    max-height: 100%;
+    height: auto;
+    transition: 0.2s;
+}
+.introduction_box img:hover
+{
+    transform:scale(1.1);
+}
+.introduction_box::after
+{
+    position: absolute;
+    content: '';
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 1px;
+    background: var(--box_bar_color); 
+    transition: all 0.3s ease 0s;
+}
+.introduction_box:hover::after
+{
+    width:75%;
+}
+
+.news_box
+{
+    width: 90%;
+    height: 15%;
+
+    position: absolute;
+    top: 42%;
+    left: 5%;
+
+    opacity:0;
+    animation-name:menu_box_anime;
+    animation-duration: var(--menu_box_anime_timer); 
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    animation-delay: 1.5s;
+
+    transition: 0.2s;
+}
+.news_box::after
+{
+    position: absolute;
+    content: '';
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 1px;
+    background: var(--box_bar_color); 
+    transition: all 0.3s ease 0s;
+}
+.news_box img
+{
+    max-width: 100%;
+    width: auto;
+    max-height: 100%;
+    height: auto;
+    transition: 0.2s;
+}
+.news_box img:hover
+{
+    transform:scale(1.1);
+}
+.news_box:hover::after
+{
+    width: 30%;
+}
+
+.character_box
+{
+    width: 90%;
+    height: 15%;
+
+    position: absolute;
+    top: 61%;
+    left: 5%;
+
+    opacity:0;
+    animation-name:menu_box_anime;
+    animation-duration: var(--menu_box_anime_timer); 
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    animation-delay: 1.6s;
+
+    transition: 0.2s;
+}
+.character_box::after
+{
+    position: absolute;
+    content: '';
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 1px;
+    background: var(--box_bar_color); 
+    transition: all 0.3s ease 0s;
+}
+.character_box img
+{
+    max-width: 100%;
+    width: auto;
+    max-height: 100%;
+    height: auto;
+    transition: 0.2s;
+}
+.character_box img:hover
+{
+    transform:scale(1.1);
+}
+.character_box:hover::after
+{
+    width:55%;
+}
+
+.onair_box
+{
+    width: 90%;
+    height: 15%;
+
+    position: absolute;
+    top: 80%;
+    left: 5%;
+
+    opacity:0;
+    animation-name:menu_box_anime;
+    animation-duration: var(--menu_box_anime_timer); 
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    animation-delay: 1.7s;
+
+    transition: 0.2s;
+}
+.onair_box::after
+{
+    position: absolute;
+    content: '';
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 1px;
+    background: var(--box_bar_color); 
+    transition: all 0.3s ease 0s;
+}
+.onair_box img
+{
+    max-width: 100%;
+    width: auto;
+    max-height: 100%;
+    height: auto;
+    transition: 0.2s;
+}
+.onair_box img:hover
+{
+    transform:scale(1.1);
+}
+.onair_box:hover::after
+{
+    width:35%;
+}
+
+.link_top_box
+{
+    width: 90%;
+    height: 20%;
+
+    background-color: var(--top_box_color); 
+
+    position: absolute;
+    top: 30%;
+    left: 5%;
+
+    opacity: 1;
+    animation-name: base_anime;
+    animation-duration: var(--base_anime_delay); 
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    animation-delay: 0s;
+
+}
+.link_top_box img
+{
+    max-width: 100%;
+    width: auto;
+    max-height: 100%;
+    height: auto;
+}
+
+.twitter_box
+{
+    background-color: #000000;
+    width: 70px;
+    height: 70px;
+
+    position: absolute;
+    top: 55%;
+    left: 5%;
+
+    opacity:0;
+    animation-name:menu_box_anime;
+    animation-duration: var(--menu_box_anime_timer); 
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    animation-delay: 1.8s;
+}
+.twitter_box img
+{
+    max-width: 100%;
+    width: auto;
+    max-height: 100%;
+    height: auto;
+    transition: 0.2s;
+}
+.twitter_box img:hover
+{
+    transform:scale(1.2);
+}
+
+
+@keyframes base_anime
+{
+    0%
+    {
+        opacity: 0;
+    }
+    80%
+    {
+        opacity: 0;
+    }
+    100%
+    {
+        opacity: 1;
+    }
+}
+
+@keyframes icon_box_anime
+{
+    0%
+    {
+        top: 50%;
+        left: 50%;
+        opacity: 0;
+        transform: scale(2, 2);
+        transform-origin: right bottom;
+    }
+    50%
+    {
+        margin: auto;
+        top: 50%;
+        left: 50%;
+        opacity: 1; 
+        transform: scale(2, 2);
+        transform-origin: right bottom;
+    }
+    100%
+    {
+        opacity: 1;
+        transform: scale(1, 1);
+    }
+}
+
+@keyframes menu_box_anime
+{
+    0%
+    {
+        opacity: 0;
+        transform: translateX(320px);
+    }
+    100%
+    {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes eyecatch_cover_box_anime
+{
+    0%
+    {
+        width: 100%;
+        right: 0%;
+    }
+    99%
+    {
+        opacity: 1;
+    }
+    100%
+    {
+        opacity: 0;
+        width: 0%;
+        right: 0%;
+    }
+}

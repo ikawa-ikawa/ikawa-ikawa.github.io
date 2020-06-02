@@ -1,0 +1,115 @@
+<meta http-equiv="content-type" charset="utf-8">
+
+<html>
+
+<head>
+    <link rel = "stylesheet" type = "text/css" href = "character.css" />
+    <script type="text/javascript" src="index.js"></script>
+
+    <meta name = "iscription" content = "このサイトを検索した際に簡易説明に表示される部分です">
+
+    <title>
+        タブに表示される部分でーす
+    </title>
+</head>
+
+<body>
+
+    <div class = "main_box">
+
+        <div class ="icon_box" onclick = "goTop()">
+            <img src="img/icon.png">
+        </div>
+
+
+        <div class = "menu_box">
+
+            <div class = "menu_top_box">
+                <img src="img/menu.png">
+            </div>
+
+            <div class = "introduction_box" onclick = "goIntroduction()">
+                <img src="img/introduction.png">
+            </div>
+            
+            <div class = "news_box" onclick = "goNews()">
+                <img src="img/news.png">
+            </div>
+
+            <div class = "character_box" onclick = "goCharacter()">
+                <img src="img/character.png">
+            </div>
+
+            <div class = "onair_box" onclick = "goOnair()">
+                <img src="img/onair.png">
+            </div>
+
+        </div>
+
+        <div class="eyecatch_box">
+            <div class = "character_box2">
+                <img src="img/character.png">
+            </div>
+
+            <div class = "chara_tatie_box">
+                <img src="img/aoba.png" id="tatie">
+            </div>
+
+            <div class = "chara_iconbox_aoba" onclick = "changeImage('tatie', 'img/aoba.png') ; changeText('name', '伊々月　青葉') ; changeText('belongs', '保安局観測部第一四観測所') ; changeText('sex', '男') ; changeText('note', '通常業務員．地球からの攻撃等を観測．')">
+                <img src="img/icon_aoba.png">
+            </div>
+
+            <div class = "chara_iconbox_yurine" onclick = "changeImage('tatie', 'img/yurine.png') ; changeText('name', '川島　閖音') ; changeText('belongs', '保安局観測部第一四観測所') ; changeText('sex', '女') ; changeText('note', '新入り．観測補助を行う．')">
+                <img src="img/icon_yurine.png">
+            </div>
+
+            <div class = "chara_iconbox_sora" onclick = "changeImage('tatie', 'img/sora.png') ; changeText('name', '壁鳴　大空') ; changeText('belongs', '保安局観測部第一四観測所') ; changeText('sex', '男') ; changeText('note', '非正規雇用のエンジニア．局の命令系に従う必要が無い')">
+                <img src="img/icon_sora.png">
+            </div>
+
+            <div class = "chara_iconbox_siho" onclick = "changeImage('tatie', 'img/siho.png') ; changeText('name', '夏合　志歩') ; changeText('belongs', '保安局観測部第一四観測所') ; changeText('sex', '女') ; changeText('note', '一四観測所の主力汎用戦闘員．')">
+                <img src="img/icon_siho.png">
+            </div>
+
+            <div class = "chara_iconbox_takesi" onclick = "changeImage('tatie', 'img/takesi.png') ; changeText('name', '平田　武') ; changeText('belongs', '保安局観測部第一四観測所') ; changeText('sex', '男') ; changeText('note', '一四観測所所長．所内全体の指揮を取る．')">
+                <img src="img/icon_takesi.png">
+            </div>
+
+            <div class = "chara_iconbox_nana" onclick = "changeImage('tatie', 'img/nana.png') ; changeText('name', '若葉　奈々') ; changeText('belongs', '保安局観測部第一四観測所') ; changeText('sex', '女') ; changeText('note', '所長補佐．事務作業が多い．')">
+                <img src="img/icon_nana.png">
+            </div>
+
+            <div class = "details_box">
+                <div class = "name_top_box">
+                    名前
+                </div>
+                <div class = "belongs_top_box">
+                    所属
+                </div>
+                <div class = "sex_top_box">
+                    性別
+                </div>
+                <div class = "note_top_box">
+                    備考
+                </div>
+                <div class = "name_box" id = "name">
+                    伊々月　青葉
+                </div>
+                <div class = "belongs_box" id = "belongs">
+                    保安局観測部第一四観測所
+                </div>
+                <div class = "sex_box" id = "sex">
+                    男
+                </div>
+                <div class = "note_box" id = "note">
+                    通常業務員．地球からの攻撃等を観測．
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+</body>
+
+</html>
+
